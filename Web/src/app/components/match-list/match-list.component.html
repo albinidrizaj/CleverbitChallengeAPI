@@ -1,0 +1,9 @@
+<div class="match-list">
+    <mat-card class="match-list-container">
+        Current match:
+        <app-current-match></app-current-match>
+
+        Other matches:
+        <app-match-list-item *ngFor="let item of matches" [item]="item"></app-match-list-item>
+    </mat-card>
+</div>
